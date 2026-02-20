@@ -3,6 +3,7 @@ import DownloadButton from "./components/DownloadButton";
 import ProfileEffect from "./components/ProfileEffect";
 import ScrollDown from "./components/ScrollDown";
 import SocialIcons from "../../components/SocialIcons";
+import ThemeToggle from "../../components/ThemeToggle";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
@@ -34,14 +35,14 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <p className="sm:ml-7 md:ml-0">Hi, I'm</p>
-              <p className="font-bold text-[#60a5fa] drop-shadow-sm">
+              <p className="font-bold text-[rgb(var(--color-primary))] opacity-100 drop-shadow-[0_0_12px_rgba(var(--color-primary),0.8)]">
                 &nbsp;Abhinandan&nbsp;
               </p>
               <p>based in India&nbsp;</p>
             </motion.div>
             <motion.div
               className="flex flex-row justify-center sm:justify-start -mx-16 sm:-mx-20 md:-mx-0 sm:-ml-7 md:-ml-0
-                text-2xl sm:text-3xl md:text-[2.5rem] lg:text-[2.75rem] xl:text-[3.5rem] text-white text-shadow-neon star-wars-font"
+                text-2xl sm:text-3xl md:text-[2.5rem] lg:text-[2.75rem] xl:text-[3.5rem] text-[rgb(var(--color-primary))] opacity-100 drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] star-wars-font"
               initial={{
                 opacity: 0,
                 x: isMobile ? 0 : -200,
@@ -112,6 +113,9 @@ const Home = () => {
               can contribute to innovative projects while further strengthening
               my technical expertise.
             </motion.p>
+
+
+
             <div
               className="flex flex-col sm:flex-row items-center gap-10 sm:gap-[19rem] md:gap-[4.5rem] lg:gap-12
               pt-4 md:pt-0 sm:-mx-3 lg:-mx-0"
@@ -136,8 +140,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="flex flex-col items-center mt-12 mb-8 z-10">
+        <ThemeToggle />
+      </div>
       <ScrollDown />
-    </section>
+    </section >
   );
 };
 

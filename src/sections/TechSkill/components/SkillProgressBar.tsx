@@ -30,13 +30,13 @@ const SkillProgressBar = () => {
           >
             <SpotlightCard key={category.id} className="w-full lg:w-[170%]">
               <div
-                className="relative h-full border-2 border-[rgba(75,30,133,0.5)] rounded-[inherit] 
-              bg-gradient-to-br from-[rgba(75,30,133,0.8)] to-[rgb(0,0,0)] p-2 z-20"
+                className="relative h-full border-2 border-[rgba(var(--color-project-bg-start),0.5)] rounded-[inherit] 
+              bg-gradient-to-br from-[rgba(var(--color-project-bg-start),0.8)] to-[rgb(0,0,0)] p-2 z-20"
               >
                 <div className="flex flex-col h-full items-center text-center">
                   <div className="relative inline-flex p-4">
                     <div
-                      className="w-[40%] h-[40%] border absolute inset-0 m-auto blur-3xl -z-10 rounded-full bg-purple-800"
+                      className="w-[40%] h-[40%] border absolute inset-0 m-auto blur-3xl -z-10 rounded-full bg-[rgba(var(--color-project-bg-start),0.8)]"
                       aria-hidden="true"
                     ></div>
                     <div className="grow">

@@ -36,7 +36,7 @@ const ProjectCards = ({ genre }: ProjectCardsProps) => {
         <div key={project.id} className="flex flex-col my-6">
           <motion.div
             className="h-[30rem] sm:h-[29rem] md:h-[30rem] lg:h-[33rem] sm:mx-1 lg:mx-5 xl:mx-12 px-6 sm:px-7 md:px-8.5 lg:px-12 
-              border-2 border-[rgba(75,30,133,0.5)] rounded-3xl bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] 
+              border-2 border-[rgba(var(--color-project-bg-start),0.5)] rounded-3xl bg-gradient-to-br from-[rgba(var(--color-project-bg-start),1)] to-[rgba(var(--color-project-bg-end),0.01)] 
               flex flex-col justify-center items-left transition-all duration-300 hover:transform hover:-translate-y-2
               relative z-10"
             onMouseEnter={onMouseEnter}

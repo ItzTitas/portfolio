@@ -34,7 +34,7 @@ const Tab = ({ text, selected, setSelected }: TabProps) => {
           layoutId="tabs"
           transition={{ type: "spring", duration: 0.5 }}
           className="absolute inset-0 border-2 border-gray-600 rounded-full
-          bg-gradient-to-br from-[rgb(75,30,133)] to-[rgba(75,30,133,0.01)]"
+          bg-gradient-to-br from-[rgba(var(--color-project-bg-start),1)] to-[rgba(var(--color-project-bg-end),0.01)]"
         />
       )}
     </button>

@@ -116,7 +116,7 @@ const NavBar = () => {
               className={`absolute inset-x-0 flex lg:flex-row ${isMenuOpen || isLargeScreen ? "flex flex-col" : "hidden"
                 } lg:flex items-center border border-gray-600 rounded-xl lg:rounded-full 
                 py-3 lg:py-0 -ml-28 md:-ml-32 lg:-ml-28 lg:-mr-40 xl:-ml-20 xl:-mr-20 2xl:ml-10 2xl:mr-0
-                bg-black bg-opacity-60 backdrop-blur-lg shadow-xl shadow-sky-800 lg:shadow-sky-950`}
+                bg-black bg-opacity-60 backdrop-blur-lg shadow-xl shadow-theme-primary/30`}
               initial={{
                 opacity: 0,
                 x: 200,
@@ -139,9 +139,9 @@ const NavBar = () => {
                 {/* Framer motion animation for the border of the active route */}
                 <motion.div
                   key={activeRoute}
-                  className={`absolute inset-y-0 lg:border-2 border-blue-400 rounded-full bg-transparent shadow-md shadow-sky-500 ${isMenuOpen
+                  className={`absolute inset-y-0 lg:border-2 border-theme-primary rounded-full bg-gradient-to-br from-[rgba(var(--color-project-bg-start),0.8)] to-[rgba(var(--color-project-bg-end),0.01)] shadow-md shadow-theme-primary/50 ${isMenuOpen
                     ? "shadow-none"
-                    : "shadow-transparent lg:shadow-sky-500"
+                    : "shadow-transparent lg:shadow-theme-primary/50"
                     }`}
                   initial={{ x: `${getRouteIndex(prevActiveRoute) * 100}%` }}
                   animate={{ x: `${getRouteIndex(activeRoute) * 100}%` }}
@@ -161,7 +161,7 @@ const NavBar = () => {
                   className={`relative z-10 flex items-center py-[0.625rem] md:py-2 lg:w-full
                     transition-all duration-300 rounded-full lg:hover:bg-white/10
                     ${activeRoute === route.id
-                      ? "font-bold lg:font-normal text-sky-300"
+                      ? "font-bold lg:font-normal text-theme-primary"
                       : "text-gray-400 hover:text-white"
                     }`}
                 >

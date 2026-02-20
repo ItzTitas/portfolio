@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: 96, 165, 250;
+    /* blue-400 */
+    --color-project-bg-start: 15, 30, 80;
+    /* Dark blue */
+    --color-project-bg-end: 15, 30, 80;
+  }
+
+  .dark-side {
+    --color-primary: 239, 68, 68;
+    /* red-500 */
+    --color-project-bg-start: 153, 27, 27;
+    /* Dark red (red-800 equivalent) */
+    --color-project-bg-end: 153, 27, 27;
+  }
+}
+
 /* Star Wars font */
 @font-face {
   font-family: "StarJedi";
   src: url("/src/assets/fonts/Starjhol.ttf") format("truetype");
 }
+
 .star-wars-font {
   font-family: "StarJedi", sans-serif;
 }
@@ -16,11 +35,13 @@
   width: 0.5rem;
   height: 0.5rem;
 }
+
 .scrollbarX::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.55);
   border-radius: 0.25rem;
   cursor: pointer;
 }
+
 .scrollbarX::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 0.25rem;
@@ -33,13 +54,16 @@
   @apply text-gray-500 !important;
   @apply hidden xl:block !important;
 }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply text-gray-300 transition-all duration-300 ease-in-out !important;
 }
+
 .swiper-pagination-bullet {
   @apply bg-slate-50 -mb-[0.8rem] p-[0.325rem] rounded-full !important;
 }
+
 .swiper-pagination-bullet-active {
   @apply bg-slate-300 transition-all duration-300 ease-in-out !important;
 }

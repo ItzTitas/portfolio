@@ -9,7 +9,7 @@ const DownloadButton = () => {
 
   return (
     <motion.div
-      className="relative w-[13.125rem] h-[3.125rem] cursor-pointer flex items-center border-2 border-gray-400 shadow-lg shadow-neon rounded-full group"
+      className="relative w-[13.125rem] h-[3.125rem] cursor-pointer flex items-center border-[2px] border-[rgba(var(--color-primary),0.6)] shadow-lg shadow-neon rounded-full group"
       onMouseEnter={onMouseEnter}
       initial={{
         opacity: 0,
@@ -32,8 +32,8 @@ const DownloadButton = () => {
         <span className="left-0 text-left text-white text-shadow-neon font-semibold transform transition-all duration-300 group-hover:text-transparent">
           Download Resume
         </span>
-        <span className="absolute right-0 h-full w-9 md:w-8 xl:w-9 bg-gray-200 flex items-center justify-center transition-all duration-300 group-hover:w-full">
-          <FiDownload className="fill-gray text-xl text-blue-800 font-black" />
+        <span className="absolute right-0 h-full w-9 md:w-8 xl:w-9 bg-[rgb(var(--color-primary))] flex items-center justify-center transition-all duration-300 group-hover:w-full">
+          <FiDownload className="fill-gray text-xl text-white font-black" />
         </span>
       </button>
     </motion.div>

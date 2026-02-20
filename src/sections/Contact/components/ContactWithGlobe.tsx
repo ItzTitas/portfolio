@@ -30,7 +30,7 @@ const ContactWithGlobe = () => {
           <BsPencilSquare />
           <p>GET IN TOUCH</p>
         </div>
-        <div className="flex flex-col gap-y-4 text-left text-slate-500">
+        <div className="flex flex-col gap-y-4 text-left text-theme-primary opacity-80">
           <div
             className="flex flex-col relative z-10 lg:ml-2
             hover:text-slate-300 transition-all duration-300 ease-in-out"

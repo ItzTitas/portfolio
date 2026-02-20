@@ -90,7 +90,7 @@ const ReactHookForm = () => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="relative flex flex-col gap-y-6 py-8 pb-11 md:pb-14 lg:pb-20 border rounded-3xl
-          border-[rgba(75,30,133,0.5)] bg-[linear-gradient(150deg,rgba(75,30,133,0.8),rgb(0,0,0))]"
+          border-[rgba(var(--color-project-bg-start),0.5)] bg-[linear-gradient(150deg,rgba(var(--color-project-bg-start),0.8),rgb(0,0,0))]"
         >
           <div className="flex flex-row gap-x-2 items-center justify-center mt-2 text-base md:text-lg lg:text-xl">
             <ImRocket />

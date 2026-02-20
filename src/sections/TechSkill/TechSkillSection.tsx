@@ -40,7 +40,7 @@ const TechSkillSection = () => {
       <div className="flex flex-col lg:flex-row items-center lg:gap-x-8 px-4 md:px-6">
         <div className="relative inline-flex lg:-mx-14 xl:-mx-5 -mt-10 lg:mt-0 sm:max-w-[20rem] md:max-w-[30rem] lg:max-w-max">
           <div
-            className="w-[55%] h-[55%] lg:w-[50%] lg:h-[50%] absolute inset-0 m-auto blur-3xl -z-10 rounded-full bg-violet-800"
+            className="w-[55%] h-[55%] lg:w-[50%] lg:h-[50%] absolute inset-0 m-auto blur-3xl -z-10 rounded-full bg-[rgba(var(--color-project-bg-start),0.8)]"
             aria-hidden="true"
           ></div>
           <div className="grow">

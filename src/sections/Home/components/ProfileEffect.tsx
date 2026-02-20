@@ -40,8 +40,9 @@ const ProfileEffect = () => {
         viewport={{ once: true }}
       />
       <motion.div
-        className="bg-cover bg-center bg-no-repeat shadow-[inset_0_0_0_9px_rgba(225,225,225,0.3)]
-          w-[16rem] h-[16rem] sm:w-[16rem] sm:h-[16rem] md:w-[18rem] md:h-[18rem] lg:w-[22rem] lg:h-[22rem] rounded-3xl"
+        className="bg-cover bg-center bg-no-repeat 
+          border-[4px] border-[rgb(var(--color-primary))] shadow-[0_0_25px_rgba(var(--color-primary),0.8)]
+          w-[16rem] h-[16rem] sm:w-[16rem] sm:h-[16rem] md:w-[18rem] md:h-[18rem] lg:w-[22rem] lg:h-[22rem] rounded-[2rem]"
         style={{ backgroundImage: `url(${profile})` }}
         initial={{
           opacity: 0,

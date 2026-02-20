@@ -1,6 +1,20 @@
 import createGlobe, { COBEOptions } from "cobe";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "../../../lib/utils";
+
+function useThemeState() {
+  const [isDark, setIsDark] = useState(() =>
+    typeof document !== "undefined" ? document.documentElement.classList.contains("dark-side") : false
+  );
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains("dark-side"));
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
+  return isDark;
+}
 
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,
@@ -33,6 +47,8 @@ export function Globe({
   let width = 0; // width of the canvas
   const canvasRef = useRef<HTMLCanvasElement>(null); // reference to the canvas element
 
+  const isDark = useThemeState();
+
   // Callback function to update the state of the globe on render
   const onRender = useCallback(
     (state: Record<string, unknown>) => {
@@ -59,11 +75,15 @@ export function Globe({
       ...config,
       width: width * 2,
       height: width * 2,
+      markerColor: isDark ? [0.93, 0.26, 0.26] : [0.1, 0.4, 1], // red for dark side, blue for light side
       onRender,
     });
     setTimeout(() => (canvasRef.current!.style.opacity = "1"));
-    return () => globe.destroy();
-  });
+    return () => {
+      window.removeEventListener("resize", onResize);
+      globe.destroy();
+    };
+  }, [isDark, config, onRender]);
 
   return (
     <div

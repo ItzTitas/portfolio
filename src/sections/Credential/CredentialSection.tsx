@@ -51,13 +51,13 @@ const CredentialSection = () => {
                             key={item.id}
                             position={index % 2 === 0 ? "left" : "right"}
                             contentStyle={{
-                                background: "rgba(30, 41, 59, 0.7)",
+                                background: "rgba(var(--color-project-bg-start), 0.8)",
                                 color: "#fff",
                                 boxShadow: "0 0 15px rgba(234, 179, 8, 0.3)",
                                 border: "1px solid rgba(234, 179, 8, 0.5)",
                                 borderRadius: "1rem",
                             }}
-                            contentArrowStyle={{ borderRight: "7px solid rgba(30, 41, 59, 0.7)" }}
+                            contentArrowStyle={{ borderRight: "7px solid rgba(var(--color-project-bg-start), 0.8)" }}
                             date={item.date}
                             iconStyle={{ background: "#1e293b", color: "#eab308", border: "2px solid #eab308" }}
                             icon={<item.icon />}

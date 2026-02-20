@@ -60,12 +60,13 @@ export default {
         },
       },
       textShadow: {
-        neon: "0 0 5px rgba(96, 165, 250, 1), 0 0 15px rgba(96, 165, 250, 0.9), 0 0 30px rgba(96, 165, 250, 0.7), 0 0 45px rgba(96, 165, 250, 0.5), 0 0 60px rgba(96, 165, 250, 0.3)",
+        neon: "0 0 5px rgba(var(--color-primary), 1), 0 0 15px rgba(var(--color-primary), 0.9), 0 0 30px rgba(var(--color-primary), 0.7), 0 0 45px rgba(var(--color-primary), 0.5), 0 0 60px rgba(var(--color-primary), 0.3)",
       },
       colors: {
+        "theme-primary": "rgba(var(--color-primary), <alpha-value>)",
         background: "#000",
         color: "#fff",
-        neon: "rgba(96, 165, 250, 0.15)",
+        neon: "rgba(var(--color-primary), 0.15)",
       },
     },
   },

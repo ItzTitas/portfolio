@@ -55,8 +55,8 @@ const ServiceCards = () => {
           >
             <SpotlightCard>
               <div
-                className="h-full relative border-2 border-[rgba(75,30,133,0.5)] rounded-[inherit] 
-                bg-gradient-to-br from-[rgba(75,30,133,0.8)] to-[rgb(0,0,0)] p-10 pb-8 z-20"
+                className="h-full relative border-2 border-[rgba(var(--color-project-bg-start),0.5)] rounded-[inherit] 
+                bg-gradient-to-br from-[rgba(var(--color-project-bg-start),0.8)] to-[rgb(0,0,0)] p-10 pb-8 z-20"
                 onMouseEnter={onMouseEnter}
               >
                 <div className="flex flex-col h-full items-center text-center">

@@ -111,8 +111,8 @@ function IconContainer({
         className={`flex items-center justify-center relative border-2
            rounded-full duration-75 ease-in-out
           ${hovered
-            ? `border-gray-500 ${hoverColor} bg-sky-50 transition-all duration-300 ease-in-out`
-            : "border-[rgb(190,220,255)] text-[rgb(190,220,255)] shadow-lg shadow-neon"
+            ? `border-[rgba(var(--color-primary),0.6)] ${hoverColor} bg-sky-50 transition-all duration-300 ease-in-out`
+            : "border-[rgba(var(--color-primary),0.6)] text-theme-primary shadow-lg shadow-neon"
           }`}
       >
         {/* AnimatePresence is used to animate the name becomes visible when hovered */}
