@@ -38,6 +38,7 @@ function App() {
   return (
     <>
       <AudioProvider>
+        <Analytics />
         {!hasStarted ? (
           <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
             <button
