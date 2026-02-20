@@ -12,6 +12,7 @@ import Footer from "./layouts/Footer";
 import { useEffect, useState } from "react";
 import LoadingScreen from "./loadingScreen";
 import { AudioProvider, useAudio } from "./context/AudioContext";
+import { Analytics } from "@vercel/analytics/react";
 
 const AudioStarter = () => {
   const { startBgMusic } = useAudio();
@@ -81,6 +82,7 @@ function App() {
           </>
         )}
       </AudioProvider>
+      <Analytics />
     </>
   );
 }
