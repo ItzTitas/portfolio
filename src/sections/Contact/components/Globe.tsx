@@ -5,7 +5,7 @@ import { cn } from "../../../lib/utils";
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,
   height: 800,
-  onRender: () => {},
+  onRender: () => { },
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
@@ -14,11 +14,10 @@ const GLOBE_CONFIG: COBEOptions = {
   mapSamples: 16000,
   mapBrightness: 1.2,
   baseColor: [1, 1, 1], // white
-  markerColor: [0.5, 1, 5], // blue
-  glowColor: [0.8, 0.8, 0.8], // white
+  markerColor: [0.1, 0.4, 1], // blue without intense bloom
+  glowColor: [0, 0, 0], // removed outer glow
   markers: [
-    { location: [35.6895, 139.6917], size: 0.07 }, // Tokyo
-    { location: [49.2827, -123.1207], size: 0.1 }, // Vancouver
+    { location: [22.5726, 88.3639], size: 0.1 }, // Kolkata
   ],
 };
 
