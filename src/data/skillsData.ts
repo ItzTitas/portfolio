@@ -7,12 +7,15 @@ import {
   SiWindows,
   SiLinux,
   SiDatabricks,
+  SiArduino,
 } from "react-icons/si";
 import {
   FaNetworkWired,
   FaMemory,
   FaCode,
   FaJava,
+  FaBrain,
+  FaShieldAlt,
 } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
@@ -123,6 +126,36 @@ export const skillsData = [
         icon: FaNetworkWired,
         color: "#2196F3",
         progress: 80,
+      },
+    ],
+  },
+  {
+    id: 5,
+    category: "Emerging Technologies",
+    skills: [
+      {
+        name: "Machine Learning",
+        icon: FaBrain,
+        color: "#FF6384",
+        progress: 80,
+      },
+      {
+        name: "Data Analytics",
+        icon: SiDatabricks,
+        color: "#FF3621",
+        progress: 85,
+      },
+      {
+        name: "Cybersecurity",
+        icon: FaShieldAlt,
+        color: "#36A2EB",
+        progress: 80,
+      },
+      {
+        name: "IoT / Arduino",
+        icon: SiArduino,
+        color: "#00979D",
+        progress: 85,
       },
     ],
   },

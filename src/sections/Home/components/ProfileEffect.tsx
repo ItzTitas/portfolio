@@ -41,7 +41,7 @@ const ProfileEffect = () => {
       />
       <motion.div
         className="bg-cover bg-center bg-no-repeat shadow-[inset_0_0_0_9px_rgba(225,225,225,0.3)]
-          w-[12.5rem] h-[18.75rem] sm:w-[12rem] sm:h-[18rem] md:w-[15.625rem] md:h-[21.875rem] lg:w-[18.75rem] lg:h-[27.5rem] rounded-[22%]"
+          w-[16rem] h-[16rem] sm:w-[16rem] sm:h-[16rem] md:w-[18rem] md:h-[18rem] lg:w-[22rem] lg:h-[22rem] rounded-3xl"
         style={{ backgroundImage: `url(${profile})` }}
         initial={{
           opacity: 0,

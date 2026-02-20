@@ -34,7 +34,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <p className="sm:ml-7 md:ml-0">Hi, I'm</p>
-              <p className="text-shadow-neon font-bold text-white">
+              <p className="font-bold text-[#60a5fa] drop-shadow-sm">
                 &nbsp;Abhinandan&nbsp;
               </p>
               <p>based in India&nbsp;</p>

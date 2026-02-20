@@ -1,5 +1,5 @@
 import { BiServer } from "react-icons/bi";
-import { PiCode, PiDatabase } from "react-icons/pi";
+import { PiCode, PiDatabase, PiCpu } from "react-icons/pi";
 
 export const servicesData = [
   {
@@ -19,5 +19,11 @@ export const servicesData = [
     name: "Managed Database Systems (DBMS)",
     desc: "Designing and optimizing robust database architectures using SQL and NoSQL (MongoDB, Oracle). I focus on data integrity, security, and high-availability systems.",
     icon: PiDatabase,
+  },
+  {
+    id: 4,
+    name: "IoT & Embedded Systems",
+    desc: "Designing and building physical portable devices and embedded systems using microcontrollers like Arduino, focusing on hardware integration, sensors, and real-world data acquisition.",
+    icon: PiCpu,
   },
 ];
