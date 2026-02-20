@@ -60,7 +60,7 @@ export default {
         },
       },
       textShadow: {
-        neon: "0 0 2px rgba(96, 165, 250, 0.25), 0 0 5px rgba(96, 165, 250, 0.15)",
+        neon: "0 0 5px rgba(96, 165, 250, 1), 0 0 15px rgba(96, 165, 250, 0.9), 0 0 30px rgba(96, 165, 250, 0.7), 0 0 45px rgba(96, 165, 250, 0.5), 0 0 60px rgba(96, 165, 250, 0.3)",
       },
       colors: {
         background: "#000",
