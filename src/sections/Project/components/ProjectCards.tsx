@@ -35,10 +35,10 @@ const ProjectCards = ({ genre }: ProjectCardsProps) => {
       {filteredProjects.map((project, index) => (
         <div key={project.id} className="flex flex-col my-6">
           <motion.div
-            className="h-[30rem] sm:h-[29rem] md:h-[30rem] lg:h-[33rem] sm:mx-1 lg:mx-5 xl:mx-12 px-6 sm:px-7 md:px-8.5 lg:px-12 
+            className="min-h-[35rem] sm:min-h-[33rem] md:min-h-[35rem] lg:min-h-[40rem] h-auto py-8 sm:mx-1 lg:mx-5 xl:mx-12 px-6 sm:px-7 md:px-8.5 lg:px-12 
               border-2 border-[rgba(var(--color-project-bg-start),0.5)] rounded-3xl bg-gradient-to-br from-[rgba(var(--color-project-bg-start),1)] to-[rgba(var(--color-project-bg-end),0.01)] 
-              flex flex-col justify-center items-left transition-all duration-300 hover:transform hover:-translate-y-2
-              relative z-10"
+              flex flex-col items-start transition-all duration-300 hover:transform hover:-translate-y-2
+              relative z-10 gap-y-4"
             onMouseEnter={onMouseEnter}
             initial={{
               opacity: 0,
@@ -51,28 +51,28 @@ const ProjectCards = ({ genre }: ProjectCardsProps) => {
           >
             {/* Mast image animation */}
             <motion.div
-              className="rounded-lg overflow-hidden -mt-6 md:-mt-4 border-2 border-gray-400"
+              className="rounded-lg overflow-hidden border-2 border-gray-400 w-full aspect-video"
               initial={false}
               animate={
                 isLoaded && inViewStates[index]
-                  ? { WebkitMaskImage: visibleMask, maskImage: visibleMask } // Show the image with a mask
-                  : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask } // Hide the image with a mask
+                  ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                  : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
               }
               transition={{ delay: 0.5, duration: 1 }}
-              onViewportEnter={() => handleViewportEnter(index)} // Set the state to true when the image is in view to show the image
+              onViewportEnter={() => handleViewportEnter(index)}
             >
               <img
                 src={project.image}
-                alt="Project"
-                className="object-cover"
-                onLoad={() => setIsLoaded(true)} // Set the state to true when the image is loaded to show the image
+                alt={project.title}
+                className="w-full h-full object-cover"
+                onLoad={() => setIsLoaded(true)}
               />
             </motion.div>
-            <div className="text-xl lg:text-2xl font-semibold text-left mt-2 lg:mt-4">
+            <div className="text-xl lg:text-2xl font-semibold text-left">
               {project.title}
             </div>
-            <p className="text-base font-light text-left">{project.desc}</p>
-            <div className="grid grid-cols-2 lg:flex lg:flex-row gap-2 sm:gap-2.5 md:gap-3 pr-3 md:pr-0 my-5 text-sm">
+            <p className="text-base font-light text-left flex-grow">{project.desc}</p>
+            <div className="grid grid-cols-2 lg:flex lg:flex-row gap-2 sm:gap-2.5 md:gap-3 pr-3 md:pr-0 mt-4 text-sm">
               {project.links.map((link, index) => (
                 <button
                   key={index}

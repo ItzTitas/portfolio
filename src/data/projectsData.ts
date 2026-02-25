@@ -107,7 +107,7 @@ export const projectsData = [
       {
         icon: IoMdOpen,
         text: "Live",
-        url: "#", // Add link if provided
+        url: "https://office.amicizialifescience.com/",
       },
     ],
     tech_used: [
