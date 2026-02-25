@@ -20,8 +20,8 @@ import { TbApi } from "react-icons/tb";
 export const projectsData = [
   {
     id: 1,
-    title: "Amicizia Life Science",
-    desc: "A comprehensive platform for Amicizia Life Science, a leading wholesale distributor of veterinary medicines and healthcare products.",
+    title: "Pharma Website with E-commerce",
+    desc: "A production-ready corporate platform combining brand presence with digital commerce capabilities. The system enables customers to explore veterinary solutions by species category, view detailed product information, and engage with the company through an intuitive and visually polished interface.",
     image: project1, // Keeping placeholder until user provides images
     genre: "Web",
     links: [
@@ -41,7 +41,7 @@ export const projectsData = [
   {
     id: 2,
     title: "Sales Tracker and Employee Task Provider",
-    desc: "An integrated platform for tracking team sales in real-time and managing employee tasks, designed to streamline operations and enhance productivity.",
+    desc: "A production-grade administrative control platform for managing field sales teams. The system centralizes route planning, personnel assignment, and customer engagement workflows, enabling organizations to coordinate distributed teams efficiently while maintaining full visibility over operational activities.",
     image: project2,
     genre: "Web",
     links: [
