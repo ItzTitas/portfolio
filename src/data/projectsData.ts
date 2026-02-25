@@ -39,8 +39,8 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Amicizia Attendance",
-    desc: "Internal attendance management system designed to track and manage employee attendance efficiently for Amicizia Life Science.",
+    title: "Sales Tracker and Employee Task Provider",
+    desc: "An integrated platform for tracking team sales in real-time and managing employee tasks, designed to streamline operations and enhance productivity.",
     image: project2,
     genre: "Web",
     links: [
@@ -85,7 +85,7 @@ export const projectsData = [
       {
         icon: IoLogoGithub,
         text: "GitHub",
-        url: "https://github.com/ItzTitas/StarWars-Portfolio",
+        url: "https://github.com/ItzTitas/portfolio",
       },
     ],
     tech_used: [
@@ -94,6 +94,25 @@ export const projectsData = [
       { icon: SiTailwindcss, name: "Tailwind CSS" },
       { icon: SiTypescript, name: "TypeScript" },
       { icon: SiFramer, name: "Framer Motion" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Attendance System over WebApp",
+    desc: "A production-grade Field Operations Management Platform built for pharmaceutical sales teams. The system centralizes workforce coordination by enabling administrators to manage organizational hierarchy, managers to assign daily routes and customers, and employees to log attendance and field visits in real time. Includes analytics dashboards, automated reporting, and mobile accessibility for on-the-go usage",
+    image: project1, // Placeholder
+    genre: "Web",
+    links: [
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "#", // Add link if provided
+      },
+    ],
+    tech_used: [
+      { icon: SiReact, name: "React" },
+      { icon: SiTailwindcss, name: "Tailwind CSS" },
+      { icon: SiTypescript, name: "TypeScript" },
     ],
   },
 ];
