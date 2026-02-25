@@ -3,6 +3,7 @@ import project1 from "./../assets/images/project1.png";
 import project2 from "./../assets/images/project2.png";
 import project3 from "./../assets/images/project3.png";
 import project4 from "./../assets/images/project4.png";
+import project5 from "./../assets/images/project5.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -100,7 +101,7 @@ export const projectsData = [
     id: 5,
     title: "Attendance System over WebApp",
     desc: "A production-grade Field Operations Management Platform built for pharmaceutical sales teams. The system centralizes workforce coordination by enabling administrators to manage organizational hierarchy, managers to assign daily routes and customers, and employees to log attendance and field visits in real time. Includes analytics dashboards, automated reporting, and mobile accessibility for on-the-go usage",
-    image: project1, // Placeholder
+    image: project5,
     genre: "Web",
     links: [
       {
