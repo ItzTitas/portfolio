@@ -5,6 +5,7 @@ import project3 from "./../assets/images/project3.png";
 import project4 from "./../assets/images/project4.png";
 import project5 from "./../assets/images/project5.png";
 import project6 from "./../assets/images/project6.png";
+import project7 from "./../assets/images/project7.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -134,6 +135,26 @@ export const projectsData = [
       { icon: SiReact, name: "React" },
       { icon: SiTailwindcss, name: "Tailwind CSS" },
       { icon: SiTypescript, name: "TypeScript" },
+    ],
+  },
+  {
+    id: 7,
+    title: "I Can't Decide What to Watch",
+    desc: "A web-based movie and TV show discovery platform with a premium, pool-table-inspired shelf layout. Users can toggle between Movies and Shows, search titles, and filter by genre, era, rating, and more. Swipeable cards fit within a structured slab hierarchy, ensuring a consistent, responsive experience across desktop and mobile.",
+    image: project7,
+    genre: "Web",
+    links: [
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "https://icantdecidewhattowatch.vercel.app/",
+      },
+    ],
+    tech_used: [
+      { icon: SiVite, name: "Vite" },
+      { icon: SiReact, name: "React" },
+      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiTailwindcss, name: "Tailwind CSS" },
     ],
   },
 ];
