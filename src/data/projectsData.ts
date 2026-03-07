@@ -6,6 +6,7 @@ import project4 from "./../assets/images/project4.png";
 import project5 from "./../assets/images/project5.png";
 import project6 from "./../assets/images/project6.png";
 import project7 from "./../assets/images/project7.png";
+import project8 from "./../assets/images/project8.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -16,6 +17,10 @@ import {
   SiTypescript,
   SiVite,
   SiFramer,
+  SiNodedotjs,
+  SiExpress,
+  SiSocketdotio,
+  SiFirebase,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -155,6 +160,26 @@ export const projectsData = [
       { icon: SiReact, name: "React" },
       { icon: SiTypescript, name: "TypeScript" },
       { icon: SiTailwindcss, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Super Tic-Tac-Toe",
+    desc: "A real-time multiplayer strategy game where players compete on a 3×3 grid of mini Tic-Tac-Toe boards. Players claim blocks by winning mini boards and aim to secure three blocks in a row to win the match. Features a nostalgic Windows XP-style interface with matchmaking, friend rooms, and a leaderboard.",
+    image: project8,
+    genre: "Web",
+    links: [
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "https://www.supertictactoe.vercel.app",
+      },
+    ],
+    tech_used: [
+      { icon: SiNodedotjs, name: "Node.js" },
+      { icon: SiExpress, name: "Express" },
+      { icon: SiSocketdotio, name: "Socket.IO" },
+      { icon: SiFirebase, name: "Firebase" },
     ],
   },
 ];
