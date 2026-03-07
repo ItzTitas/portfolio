@@ -164,7 +164,7 @@ export const projectsData = [
   },
   {
     id: 8,
-    title: "Super Tic-Tac-Toe",
+    title: "Super Tic Tac Toh",
     desc: "A real-time multiplayer strategy game where players compete on a 3×3 grid of mini Tic-Tac-Toe boards. Players claim blocks by winning mini boards and aim to secure three blocks in a row to win the match. Features a nostalgic Windows XP-style interface with matchmaking, friend rooms, and a leaderboard.",
     image: project8,
     genre: "Web",
@@ -172,7 +172,7 @@ export const projectsData = [
       {
         icon: IoMdOpen,
         text: "Live",
-        url: "https://www.supertictactoe.vercel.app",
+        url: "https://supertictactoh.vercel.app/",
       },
     ],
     tech_used: [
