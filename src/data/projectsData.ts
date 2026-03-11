@@ -7,6 +7,7 @@ import project5 from "./../assets/images/project5.png";
 import project6 from "./../assets/images/project6.png";
 import project7 from "./../assets/images/project7.png";
 import project8 from "./../assets/images/project8.png";
+import project9 from "./../assets/images/project9.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -179,6 +180,26 @@ export const projectsData = [
       { icon: SiNodedotjs, name: "Node.js" },
       { icon: SiExpress, name: "Express" },
       { icon: SiSocketdotio, name: "Socket.IO" },
+      { icon: SiFirebase, name: "Firebase" },
+    ],
+  },
+  {
+    id: 9,
+    title: "Stride",
+    desc: "A gamified productivity app where daily tasks grow a living forest. Complete quests, maintain streaks, and reduce unhealthy habits to unlock achievements and new forest scenes. Follow a winding quest path, compete with friends, send streak boosts, and stay motivated through playful progress and social encouragement.",
+    image: project9,
+    genre: "Web",
+    links: [
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "https://stride-powered.vercel.app/",
+      },
+    ],
+    tech_used: [
+      { icon: SiReact, name: "React" },
+      { icon: SiTailwindcss, name: "Tailwind CSS" },
+      { icon: SiFramer, name: "Framer Motion" },
       { icon: SiFirebase, name: "Firebase" },
     ],
   },
