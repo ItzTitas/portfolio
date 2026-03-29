@@ -8,6 +8,7 @@ import project6 from "./../assets/images/project6.png";
 import project7 from "./../assets/images/project7.png";
 import project8 from "./../assets/images/project8.png";
 import project9 from "./../assets/images/project9.png";
+import project10 from "./../assets/images/project10.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -22,6 +23,7 @@ import {
   SiExpress,
   SiSocketdotio,
   SiFirebase,
+  SiStreamlit,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -201,6 +203,29 @@ export const projectsData = [
       { icon: SiTailwindcss, name: "Tailwind CSS" },
       { icon: SiFramer, name: "Framer Motion" },
       { icon: SiFirebase, name: "Firebase" },
+    ],
+  },
+  {
+    id: 10,
+    title: "FraudGuard AI",
+    desc: "AI-powered web app that analyzes financial transactions and predicts fraud risk using a trained machine-learning model. Users input transaction details and the system returns a fraud probability with a clear fraud/not-fraud prediction via an interactive Streamlit dashboard.",
+    image: project10,
+    genre: "AI / ML",
+    links: [
+      {
+        icon: IoLogoGithub,
+        text: "GitHub",
+        url: "https://github.com/ItzTitas/fraudguardAI",
+      },
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "https://fraudguardai-nfns9ht578cbkok8mym6rx.streamlit.app/",
+      },
+    ],
+    tech_used: [
+      { icon: SiPython, name: "Python" },
+      { icon: SiStreamlit, name: "Streamlit" },
     ],
   },
 ];
