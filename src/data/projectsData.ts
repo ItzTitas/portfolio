@@ -150,7 +150,7 @@ export const projectsData = [
     title: "I Can't Decide What to Watch",
     desc: "A web-based movie and TV show discovery platform with a premium, pool-table-inspired shelf layout. Users can toggle between Movies and Shows, search titles, and filter by genre, era, rating, and more. Swipeable cards fit within a structured slab hierarchy, ensuring a consistent, responsive experience across desktop and mobile.",
     image: project7,
-    genre: "Web",
+    genre: "Apps",
     links: [
       {
         icon: IoMdOpen,
@@ -170,7 +170,7 @@ export const projectsData = [
     title: "Super Tic Tac Toh",
     desc: "A real-time multiplayer strategy game where players compete on a 3×3 grid of mini Tic-Tac-Toe boards. Players claim blocks by winning mini boards and aim to secure three blocks in a row to win the match. Features a nostalgic Windows XP-style interface with matchmaking, friend rooms, and a leaderboard.",
     image: project8,
-    genre: "Web",
+    genre: "Apps",
     links: [
       {
         icon: IoMdOpen,
@@ -190,7 +190,7 @@ export const projectsData = [
     title: "Stride",
     desc: "A gamified productivity app where daily tasks grow a living forest. Complete quests, maintain streaks, and reduce unhealthy habits to unlock achievements and new forest scenes. Follow a winding quest path, compete with friends, send streak boosts, and stay motivated through playful progress and social encouragement.",
     image: project9,
-    genre: "Web",
+    genre: "Apps",
     links: [
       {
         icon: IoMdOpen,
