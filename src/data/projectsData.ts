@@ -9,6 +9,7 @@ import project7 from "./../assets/images/project7.png";
 import project8 from "./../assets/images/project8.png";
 import project9 from "./../assets/images/project9.png";
 import project10 from "./../assets/images/project10.png";
+import project11 from "./../assets/images/project11.png";
 import {
   SiFlask,
   SiGoogledrive,
@@ -24,6 +25,10 @@ import {
   SiSocketdotio,
   SiFirebase,
   SiStreamlit,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiChartdotjs,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -226,6 +231,33 @@ export const projectsData = [
     tech_used: [
       { icon: SiPython, name: "Python" },
       { icon: SiStreamlit, name: "Streamlit" },
+    ],
+  },
+  {
+    id: 11,
+    title: "PriceTracker",
+    desc: "A lightweight, mobile-first web app displaying real-time gold, silver, and copper prices. Defaults to Kolkata, India with multi-location support. Gold adapts across 18K–24K purity levels for everyday relevance. Uses a scraping-based backend instead of paid APIs, keeping it cost-efficient. Fast-loading and minimal UI designed for quick access to essential commodity data.",
+    image: project11,
+    genre: "Web",
+    links: [
+      {
+        icon: IoLogoGithub,
+        text: "GitHub",
+        url: "https://github.com/ItzTitas/pricetracker",
+      },
+      {
+        icon: IoMdOpen,
+        text: "Live",
+        url: "https://pricetracker-sooty.vercel.app/",
+      },
+    ],
+    tech_used: [
+      { icon: SiHtml5, name: "HTML5" },
+      { icon: SiCss3, name: "CSS3" },
+      { icon: SiJavascript, name: "JavaScript" },
+      { icon: SiChartdotjs, name: "Chart.js" },
+      { icon: SiPython, name: "Python" },
+      { icon: SiFlask, name: "Flask" },
     ],
   },
 ];
