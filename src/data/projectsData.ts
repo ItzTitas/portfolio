@@ -25,10 +25,7 @@ import {
   SiSocketdotio,
   SiFirebase,
   SiStreamlit,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiChartdotjs,
+  SiPostgresql,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -235,8 +232,8 @@ export const projectsData = [
   },
   {
     id: 11,
-    title: "PriceTracker",
-    desc: "A lightweight, mobile-first web app displaying real-time gold, silver, and copper prices. Defaults to Kolkata, India with multi-location support. Gold adapts across 18K–24K purity levels for everyday relevance. Uses a scraping-based backend instead of paid APIs, keeping it cost-efficient. Fast-loading and minimal UI designed for quick access to essential commodity data.",
+    title: "aurumcalculator",
+    desc: "aurumcalculator is a precious metals portfolio intelligence platform that helps users track, analyze, and grow their Gold and Silver wealth. Users can monitor live market prices, record purchases from any point in history, track jewelry and bullion holdings, reconstruct portfolio performance, calculate gains and losses, create price alerts, and visualize long-term wealth growth through brokerage-style analytics.",
     image: project11,
     genre: "Web",
     links: [
@@ -248,16 +245,14 @@ export const projectsData = [
       {
         icon: IoMdOpen,
         text: "Live",
-        url: "https://pricetracker-sooty.vercel.app/",
+        url: "https://aurumcalculator.vercel.app/",
       },
     ],
     tech_used: [
-      { icon: SiHtml5, name: "HTML5" },
-      { icon: SiCss3, name: "CSS3" },
-      { icon: SiJavascript, name: "JavaScript" },
-      { icon: SiChartdotjs, name: "Chart.js" },
-      { icon: SiPython, name: "Python" },
-      { icon: SiFlask, name: "Flask" },
+      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiReact, name: "React" },
+      { icon: SiNodedotjs, name: "Node.js" },
+      { icon: SiPostgresql, name: "PostgreSQL" },
     ],
   },
 ];
