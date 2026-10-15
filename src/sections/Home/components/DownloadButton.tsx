@@ -23,8 +23,9 @@ const DownloadButton = () => {
       viewport={{ once: true }}
     >
       <a
-        href="https://drive.google.com/file/d/1U941Edcgk24K0p657PCyP1R1kT3rUoBG/view?usp=sharing"
+        href="https://drive.google.com/file/d/1BNJpOzVtgJdExSRRGvL15ZED1hfBfWXa/view?usp=sharing"
         target="_blank"
+        rel="noopener noreferrer"
         download="Abhinandan_Ojha_Resume.pdf"
         className="absolute w-full h-full top-0 left-0 z-10"
       ></a>
